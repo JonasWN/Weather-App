@@ -3,75 +3,87 @@
 @import "burger-menu-module";
 
 .body {
-    background: $background-color;
-    padding: 5vh 0;
-    color: $main-text-color;
-    font-family: Arial, Helvetica, sans-serif;
+  background: $background-color;
+  padding: 5vh 0;
+  color: $main-text-color;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-    max-width: 90%;
-    margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .header__day {
-    color: $header-color;
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: 50px;
+  color: $header-color;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 50px;
 }
 
 .tempeture__Container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-    min-width: 40vw;
-    max-width: 50vw;
-    margin: 0 auto;
-    margin-top: 50px;
+  min-width: 40vw;
+  max-width: 50vw;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .degrees {
-    text-align: center;
-    font-size: 1.5em;
-    width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50%;
 
-    .degree__number {
-        color: #0090ff;
-        font-weight: bold;
-    }
+  .degree__number {
+    color: #0090ff;
+    font-weight: bold;
+  }
 }
 
 .wind_container {
-    width: 50%;
+  width: 50%;
 
-    .wind {
-        text-align: center;
-        font-size: 1.5em;
+  .wind {
+    text-align: center;
+    font-size: 1.5em;
 
-        .wind__number {
-            color: #0090ff;
-        }
+    .wind__number {
+      color: #0090ff;
     }
+  }
 
-    .wind_img {
-        width: 30%;
-        margin: 0 auto;
-    }
+  .wind_img {
+    width: 30%;
+    margin: 0 auto;
+  }
 }
 
-
 .weather__img {
-    width: 20%;
-    margin: 0 auto;
-    border-bottom: 1px solid $main-text-color;
-    padding-bottom: 10px;
+  width: 20%;
+  margin: 0 auto;
+  border-bottom: 1px solid $main-text-color;
+  padding-bottom: 10px;
+}
+
+.message {
+  opacity: 0;
+  position: absolute;
+  top: 30vh;
+  left: 50px;
+  transition: all 1s ease-in-out;
+}
+
+.toggle {
+  opacity: 1;
+  transition: all 2s ease-in-out;
 }
