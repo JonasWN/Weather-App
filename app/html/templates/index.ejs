@@ -31,13 +31,22 @@
 
         <!-- Main -->
         <main class="main">
-            <h1 class="header__day">
+            <h1 class="header__day" id="day">
                 Monday
             </h1>
-            <img src="/assets/images/rain.svg" alt="" class="weather__img img">
-            <p class="degrees">
-                8*
-            </p>
+            <img src="" alt="" class="weather__img img" id="WeatherIcon">
+            <div class="tempeture__Container">
+                <p class="degrees" id="degrees">
+                    <span class="degree__number" id="degree_number"></span> °C
+                </p>
+                <div class="wind_container">
+                    <p class="wind" id="wind">
+                        <span class="wind__number" id="windNumber"></span> m/s
+                    </p>
+                    <img src="/assets/images/wind-speed.svg" alt="" class="wind_img img" id="WeatherIcon">
+                </div>
+            </div>
+
         </main>
 
 
@@ -46,12 +55,13 @@
         </section>
 
 
-
-
+        <!-- 
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     </div>
     <!-- Wrapper-Ends -->
     <script src="assets/js/current-weather.js" defer></script>
     <script src="assets/js/burgerMenu.js" defer></script>
+    <script src="assets/js/date.js" defer></script>
 </body>
 
 </html>
