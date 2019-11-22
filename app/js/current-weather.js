@@ -26,4 +26,4 @@ let api = () => {
     });
 }
 api()
-setInterval(api, 36000);
+setInterval(api, 600000);
