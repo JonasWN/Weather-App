@@ -12,7 +12,7 @@ const weatherIcons = {
   rainy: "/assets/images/wind-speed.svg"
 }
 
-let api = () => {
+const api = () => {
   fetch(
       `https://api.openweathermap.org/data/2.5/weather?id=2618425&appid=68f82a388c4c0de995710dfc8a8ca667&units=metric`
     )

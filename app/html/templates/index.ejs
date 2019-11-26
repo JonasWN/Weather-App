@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Weath-App-JN</title>
-  </head>
 
-  <body class="body">
-    <div class="wrapper">
-      <!-- Header -->
-      <header class="header">
-        <div class="info">
-          <p class="info__time" id="time">
-            14:32
-          </p>
-          <p class="location" id="location">
-            Copenhagen
-          </p>
-        </div>
-        <div class="burger-menu">
-          <div class="burger-menu-line" id="line-left"></div>
-          <div class="burger-menu-line_2" id="line-hover"></div>
-          <div class="burger-menu-line" id="line-right"></div>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Weath-App-JN</title>
+</head>
 
-      <!-- Main -->
-      <main class="main">
-        <h1 class="header__day" id="day">
-          Monday
-        </h1>
-        <h2 class="message" id="message">Hej Skat <3</h2>
-        <img src="" alt="" class="weather__img img" id="WeatherIcon" />
+<body class="body">
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="info">
+        <p class="info__time" id="time">
+          14:32
+        </p>
+        <p class="location" id="location">
+          Copenhagen
+        </p>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-menu-line" id="line-left"></div>
+        <div class="burger-menu-line_2" id="line-hover"></div>
+        <div class="burger-menu-line" id="line-right"></div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <h1 class="header__day" id="day">
+        Monday
+      </h1>
+      <h2 class="message" id="message">Hej Skat
+        <3</h2> <img src="" alt="" class="weather__img img" id="WeatherIcon" />
         <div class="tempeture__Container">
           <p class="degrees" id="degrees">
             <span class="degree__number" id="degree_number"></span> °C
@@ -42,24 +43,21 @@
             <p class="wind" id="wind">
               <span class="wind__number" id="windNumber"></span> m/s
             </p>
-            <img
-              src="/assets/images/wind-speed.svg"
-              alt=""
-              class="wind_img img"
-              id="WeatherIcon"
-            />
+            <img src="/assets/images/wind-speed.svg" alt="" class="wind_img img" id="WeatherIcon" />
           </div>
         </div>
-      </main>
+    </main>
 
-      <section class="weather__graph"></section>
+    <section class="weather__graph"></section>
 
-      <!-- 
+    <!-- 
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    </div>
-    <!-- Wrapper-Ends -->
-    <script src="assets/js/current-weather.js" defer></script>
-    <script src="assets/js/burgerMenu.js" defer></script>
-    <script src="assets/js/date.js" defer></script>
-  </body>
+  </div>
+  <!-- Wrapper-Ends -->
+  <script src="assets/js/current-weather.js" defer></script>
+  <script src="assets/js/burgerMenu.js" defer></script>
+  <script src="assets/js/date.js" defer></script>
+  <script src="assets/js/forecast.js" defer></script>
+</body>
+
 </html>
