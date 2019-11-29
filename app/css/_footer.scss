@@ -1,0 +1,59 @@
+.weather__graph {
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: $main-text-color;
+
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgb(41, 108, 233);
+    width: 0%;
+}
+
+.dateList {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-bottom: 15px;
+
+    .dateList__item {
+        width: 18px;
+    }
+}
+
+.daysList {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+.weatherIconsList {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .weatherIcon__item {
+
+        width: 10%;
+
+        .weatherIcon__img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+
+}

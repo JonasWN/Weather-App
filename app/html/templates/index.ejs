@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
   <title>Weath-App-JN</title>
 </head>
 
@@ -33,22 +34,73 @@
       <h1 class="header__day" id="day">
         Monday
       </h1>
-      <h2 class="message" id="message">Hej Skat
-        <3</h2> <img src="" alt="" class="weather__img img" id="WeatherIcon" />
-        <div class="tempeture__Container">
-          <p class="degrees" id="degrees">
-            <span class="degree__number" id="degree_number"></span> °C
+      <img src="" alt="" class="weather__img img" id="WeatherIcon" />
+      <div class="tempeture__Container">
+        <p class="degrees" id="degrees">
+          <span class="degree__number" id="degree_number"></span> °C
+        </p>
+        <div class="wind_container">
+          <p class="wind" id="wind">
+            <span class="wind__number" id="windNumber"></span> m/s
           </p>
-          <div class="wind_container">
-            <p class="wind" id="wind">
-              <span class="wind__number" id="windNumber"></span> m/s
-            </p>
-            <img src="/assets/images/wind-speed.svg" alt="" class="wind_img img" id="WeatherIcon" />
-          </div>
+          <img src="/assets/images/wind-speed.svg" alt="" class="wind_img img" id="WeatherIcon" />
         </div>
+      </div>
     </main>
 
-    <section class="weather__graph"></section>
+    <footer class="weather__graph">
+      <ul class="dateList" id="dateList">
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+      </ul>
+      <div class="progress-container">
+        <div class="progressBar" id="ProgressBar"></div>
+      </div>
+      <ul class="daysList" id="daysList">
+        <li class="dayList__item">Mon</li>
+        <li class="dayList__item">Tue</li>
+        <li class="dayList__item">Wen</li>
+        <li class="dayList__item">Thu</li>
+        <li class="dayList__item">Fri</li>
+        <li class="dayList__item">Sat</li>
+        <li class="dayList__item">Sun</li>
+      </ul>
+      <ul class="weatherIconsList" id="weatherIconsList">
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img sr c="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+      </ul>
+    </footer>
 
     <!-- 
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->

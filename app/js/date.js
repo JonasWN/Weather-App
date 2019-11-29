@@ -1,8 +1,9 @@
 const time = document.querySelector("#time")
 const day = document.querySelector("#day")
-
-// let counter = 0;
-// const dater = new Date();
+const dateList = document.querySelectorAll(".dateList__item")
+const dayList = document.querySelectorAll(".dayList__item")
+let counter = 0;
+const dater = new Date();
 
 // const test = {
 //     year = dater.getFullYear(),
@@ -11,21 +12,23 @@ const day = document.querySelector("#day")
 // };
 // console.log(test.year)
 
-// // for (let i = 0; i < 6; i++) {
 
-// //     const tomorrow = new Date(dater)
-// //     tomorrow.setDate(tomorrow.getDate() + counter)
-// //     console.log(tomorrow)
-// //     console.log(tomorrow.getUTCDate())
-// //     counter++
-// // }
 
 const dateDay = () => {
     const date = new Date();
 
     const days = ["Sunday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday"]
+    const shortDays = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"]
     const dateDays = date.getDay();
 
+    for (let i = 0; i < 7; i++) {
+        const weekDates = new Date()
+        weekDates.setDate(weekDates.getDate() + counter)
+
+        dateList[counter].innerText = weekDates.getUTCDate();
+        // dayList[counter].innerText = shortDays[weekDates.getDay()]
+        counter++
+    }
     day.innerText = days[dateDays]
 }
 

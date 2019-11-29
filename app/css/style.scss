@@ -1,6 +1,7 @@
 @import "varibles";
 @import "base";
 @import "burger-menu-module";
+@import "footer";
 
 .body {
   background: $background-color;
@@ -19,7 +20,15 @@
   justify-content: space-between;
   font-size: 1.5em;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.main {
   margin-bottom: 50px;
+}
+
+.info__time {
+  margin-bottom: 10px;
 }
 
 .header__day {

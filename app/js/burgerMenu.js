@@ -20,5 +20,4 @@ burgerMenu.addEventListener("click", () => {
     document.querySelector("#line-left").classList.toggle("cross-left")
     document.querySelector("#line-right").classList.toggle("cross-right")
 
-    message.classList.toggle("toggle")
 });
