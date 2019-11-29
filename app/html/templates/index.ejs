@@ -1,65 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Weath-App-JN</title>
-  </head>
 
-  <body class="body">
-    <div class="wrapper">
-      <!-- Header -->
-      <header class="header">
-        <div class="info">
-          <p class="info__time" id="time">
-            14:32
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+  <title>Weath-App-JN</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="info">
+        <p class="info__time" id="time">
+          14:32
+        </p>
+        <p class="location" id="location">
+          Copenhagen
+        </p>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-menu-line" id="line-left"></div>
+        <div class="burger-menu-line_2" id="line-hover"></div>
+        <div class="burger-menu-line" id="line-right"></div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <h1 class="header__day" id="day">
+        Monday
+      </h1>
+      <img src="" alt="" class="weather__img img" id="WeatherIcon" />
+      <div class="tempeture__Container">
+        <p class="degrees" id="degrees">
+          <span class="degree__number" id="degree_number"></span> °C
+        </p>
+        <div class="wind_container">
+          <p class="wind" id="wind">
+            <span class="wind__number" id="windNumber"></span> m/s
           </p>
-          <p class="location" id="location">
-            Copenhagen
-          </p>
+          <img src="/assets/images/wind-speed.svg" alt="" class="wind_img img" id="WeatherIcon" />
         </div>
-        <div class="burger-menu">
-          <div class="burger-menu-line" id="line-left"></div>
-          <div class="burger-menu-line_2" id="line-hover"></div>
-          <div class="burger-menu-line" id="line-right"></div>
-        </div>
-      </header>
+      </div>
+    </main>
 
-      <!-- Main -->
-      <main class="main">
-        <h1 class="header__day" id="day">
-          Monday
-        </h1>
-        <h2 class="message" id="message">Hej Skat <3</h2>
-        <img src="" alt="" class="weather__img img" id="WeatherIcon" />
-        <div class="tempeture__Container">
-          <p class="degrees" id="degrees">
-            <span class="degree__number" id="degree_number"></span> °C
-          </p>
-          <div class="wind_container">
-            <p class="wind" id="wind">
-              <span class="wind__number" id="windNumber"></span> m/s
-            </p>
-            <img
-              src="/assets/images/wind-speed.svg"
-              alt=""
-              class="wind_img img"
-              id="WeatherIcon"
-            />
-          </div>
-        </div>
-      </main>
+    <footer class="weather__graph">
+      <ul class="dateList" id="dateList">
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+        <li class="dateList__item"></li>
+      </ul>
+      <div class="progress-container">
+        <div class="progressBar" id="ProgressBar"></div>
+      </div>
+      <ul class="daysList" id="daysList">
+        <li class="dayList__item">Mon</li>
+        <li class="dayList__item">Tue</li>
+        <li class="dayList__item">Wen</li>
+        <li class="dayList__item">Thu</li>
+        <li class="dayList__item">Fri</li>
+        <li class="dayList__item">Sat</li>
+        <li class="dayList__item">Sun</li>
+      </ul>
+      <ul class="weatherIconsList" id="weatherIconsList">
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img sr c="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+        <li class="weatherIcon__item">
+          <img src="" alt="" class="weatherIcon__img">
+          <p class="forecastDegrees" id="forecastDegrees"></p>
+        </li>
+      </ul>
+    </footer>
 
-      <section class="weather__graph"></section>
-
-      <!-- 
+    <!-- 
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    </div>
-    <!-- Wrapper-Ends -->
-    <script src="assets/js/current-weather.js" defer></script>
-    <script src="assets/js/burgerMenu.js" defer></script>
-    <script src="assets/js/date.js" defer></script>
-  </body>
+  </div>
+  <!-- Wrapper-Ends -->
+  <script src="assets/js/current-weather.js" defer></script>
+  <script src="assets/js/burgerMenu.js" defer></script>
+  <script src="assets/js/date.js" defer></script>
+  <script src="assets/js/forecast.js" defer></script>
+</body>
+
 </html>
