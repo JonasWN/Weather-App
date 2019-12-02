@@ -2,15 +2,9 @@ const time = document.querySelector("#time")
 const day = document.querySelector("#day")
 const dateList = document.querySelectorAll(".dateList__item")
 const dayList = document.querySelectorAll(".dayList__item")
+const progressBar = document.querySelector("#ProgressBar")
 let counter = 0;
 const dater = new Date();
-
-// const test = {
-//     year = dater.getFullYear(),
-//     month = dater.getMonth(),
-//     day = dater.getDay()
-// };
-// console.log(test.year)
 
 
 
@@ -21,14 +15,21 @@ const dateDay = () => {
     const shortDays = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"]
     const dateDays = date.getDay();
 
+    const weekprogress = [95, 3, 20, 36, 51, 65, 80]
+    counter = 0;
     for (let i = 0; i < 7; i++) {
         const weekDates = new Date()
         weekDates.setDate(weekDates.getDate() + counter)
 
-        dateList[counter].innerText = weekDates.getUTCDate();
+
+        if (dateList[counter].innerText == "") {
+            dateList[counter].innerText = weekDates.getUTCDate();
+        }
         // dayList[counter].innerText = shortDays[weekDates.getDay()]
         counter++
     }
+
+    progressBar.style.width = `${weekprogress[dateDays]}%`
     day.innerText = days[dateDays]
 }
 

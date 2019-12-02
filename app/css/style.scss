@@ -50,13 +50,23 @@
 
 .degrees {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.5em;
   width: 50%;
+
+  align-self: center;
 
   .degree__number {
     color: #0090ff;
     font-weight: bold;
   }
+}
+
+.weatherContainer {
+  display: flex;
+
+  width: 70%;
+
+  margin: 0 auto;
 }
 
 .wind_container {
@@ -80,7 +90,7 @@
 .weather__img {
   width: 20%;
   margin: 0 auto;
-  border-bottom: 1px solid $main-text-color;
+
   padding-bottom: 10px;
 }
 

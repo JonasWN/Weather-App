@@ -1,8 +1,8 @@
 const degrees = document.querySelector("#degree_number")
 const wind = document.querySelector("#windNumber")
 const weatherIcon = document.querySelector("#WeatherIcon")
-// Weather Icons
 
+// Weather Icons
 const weatherIcons = {
   sunny: "/assets/images/sunny.svg",
   cloudy: "/assets/images/cloudy.svg",
@@ -18,9 +18,9 @@ const api = () => {
     )
     .then(answer => answer.json())
     .then(response => {
-      console.log(response);
 
-      degrees.innerText = response.main.temp
+
+      degrees.innerText = parseFloat(response.main.temp.toFixed(0))
       wind.innerText = response.wind.speed
       weatherIcon.src = `/assets/images/${response.weather[0].main}.svg`
     });
