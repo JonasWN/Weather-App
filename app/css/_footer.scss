@@ -5,14 +5,14 @@
 }
 
 .progress-container {
-    width: 100%;
+    width: 95%;
     height: 8px;
     background: $main-text-color;
 
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
 }
 
-.progress-bar {
+.progressBar {
     height: 8px;
     background: rgb(41, 108, 233);
     width: 0%;
@@ -22,12 +22,13 @@
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
+    width: 95%;
 
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
 
     .dateList__item {
-        width: 18px;
+        width: 25px;
+        text-align: center;
     }
 }
 
@@ -35,20 +36,23 @@
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
-    margin-bottom: 15px;
+    width: 95%;
+
+    margin: 0 auto 15px auto;
 }
 
 
 
 .weatherIconsList {
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: space-between;
+
+    margin: 0 auto;
 
     .weatherIcon__item {
 
-        width: 10%;
+        width: 6%;
 
         .weatherIcon__img {
             width: 100%;
@@ -56,4 +60,8 @@
         }
     }
 
+}
+
+.forecastDegrees {
+    width: 40px;
 }
