@@ -16,8 +16,6 @@ const apiForecast = () => {
 
             const list = response.list;
 
-
-
             const monday = list.filter(f => {
                 let date = new Date(f.dt * 1000);
                 let dater = date.getDay()
@@ -93,6 +91,7 @@ const apiForecast = () => {
             console.log("Something Went Wrong");
             console.error(error);
         });
-};
+}
+
 
 apiForecast();
