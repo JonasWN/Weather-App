@@ -16,6 +16,7 @@ const apiForecast = () => {
 
             const list = response.list;
 
+
             const monday = list.filter(f => {
                 let date = new Date(f.dt * 1000);
                 let dater = date.getDay()
@@ -80,7 +81,7 @@ const apiForecast = () => {
                 } else {
                     degree.innerText = "N/a"
                     degree.style.margin = "-20px 0 0 0px"
-                    degree.style.fontSize = "2em"
+                    degree.style.fontSize = "104%"
                 }
                 degreeCounter++
             });
@@ -92,6 +93,5 @@ const apiForecast = () => {
             console.error(error);
         });
 }
-
 
 apiForecast();
