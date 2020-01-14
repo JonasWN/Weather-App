@@ -1,18 +1,1 @@
-<svg width="219" height="211" viewBox="0 0 219 211" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="109.5" cy="105.5" r="45.5" fill="#FBFFD3"/>
-<circle cx="109.5" cy="105.5" r="45.5" fill="url(#paint0_linear)"/>
-<rect x="43" y="101" width="6" height="43" transform="rotate(90 43 101)" fill="#FDFFE8"/>
-<rect x="65.7224" y="55.1996" width="6" height="43" transform="rotate(135 65.7224 55.1996)" fill="#FDFFE8"/>
-<rect x="193.648" y="182.406" width="6" height="43" transform="rotate(135 193.648 182.406)" fill="#FDFFE8"/>
-<rect x="186.406" y="27" width="6" height="43" transform="rotate(45 186.406 27)" fill="#FDFFE8"/>
-<rect x="48.4056" y="153" width="6" height="43" transform="rotate(45 48.4056 153)" fill="#FDFFE8"/>
-<rect x="106" width="6" height="43" fill="#FDFFE8"/>
-<rect x="106" y="168" width="6" height="43" fill="#FDFFE8"/>
-<rect x="219" y="101" width="6" height="43" transform="rotate(90 219 101)" fill="#FDFFE8"/>
-<defs>
-<linearGradient id="paint0_linear" x1="109.5" y1="60" x2="109.5" y2="151" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="219" height="211" fill="none" viewBox="0 0 219 211"><circle cx="109.5" cy="105.5" r="45.5" fill="#FBFFD3"/><circle cx="109.5" cy="105.5" r="45.5" fill="url(#paint0_linear)"/><rect width="6" height="43" x="43" y="101" fill="#FDFFE8" transform="rotate(90 43 101)"/><rect width="6" height="43" x="65.722" y="55.2" fill="#FDFFE8" transform="rotate(135 65.7224 55.1996)"/><rect width="6" height="43" x="193.648" y="182.406" fill="#FDFFE8" transform="rotate(135 193.648 182.406)"/><rect width="6" height="43" x="186.406" y="27" fill="#FDFFE8" transform="rotate(45 186.406 27)"/><rect width="6" height="43" x="48.406" y="153" fill="#FDFFE8" transform="rotate(45 48.4056 153)"/><rect width="6" height="43" x="106" fill="#FDFFE8"/><rect width="6" height="43" x="106" y="168" fill="#FDFFE8"/><rect width="6" height="43" x="219" y="101" fill="#FDFFE8" transform="rotate(90 219 101)"/><defs><linearGradient id="paint0_linear" x1="109.5" x2="109.5" y1="60" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs></svg>
